@@ -1,0 +1,12 @@
+ # Failed Login
+SELECT * FROM events WHERE QIDNAME(qid) ILIKE '%failed%'
+ # Specific Source IP
+SELECT * FROM events WHERE sourceip = '192.168.1.100'
+# SSH Traffic
+SELECT * FROM events WHERE destinationport = 22
+# HTTP Traffic
+SELECT * FROM events WHERE destinationport = 80
+# HTTPS Traffic
+SELECT * FROM events WHERE destinationport = 443
+# DNS Traffic
+SELECT * FROM events WHERE destinationport = 53
