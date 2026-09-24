@@ -1,0 +1,10 @@
+# failed login events
+index=security EventCode=4625
+# successful login events
+index=security EventCode=4624
+# process creation event
+index=security EventCode=4688
+# finds events from a specific source ip
+index=security src_ip="192.168.0.100"
+# find network events going to HTTPS port 443
+index=security src_ip="192.168.1.100"
