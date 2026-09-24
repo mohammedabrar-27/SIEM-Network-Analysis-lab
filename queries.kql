@@ -1,12 +1,12 @@
-// 1. Failed Login
+//  Failed Login
 SecurityEvent | where EventID == 4625
-// 2. Successful Login
+//  Successful Login
 SecurityEvent | where EventID == 4624
-// 3. PowerShell
+//  PowerShell
 SecurityEvent | where EventID == 4688 | where NewProcessName contains "powershell"
-// 4. Process Creation
+//  Process Creation
 SecurityEvent | where EventID == 4688
-// 5. Scheduled Task
+//  Scheduled Task
 SecurityEvent | where EventID == 4698
-// 6. Specific IP
+//  Specific IP
 SecurityEvent | where IpAddress == "192.168.1.100"
