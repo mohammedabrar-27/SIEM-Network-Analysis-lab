@@ -1,0 +1,10 @@
+# Shows traffic involving a specific IP
+    ip.addr == 192.168.1.100
+# Shows ICMP traffic such as ping
+     icmp
+# shows DNS traffic
+     dns
+# search TCP packets contents for the text mlrit.ac.in
+    tcp contain "mlrit.ac.in"
+# search HTTP packets contents for the text mlrit.ac.in
+    http contain "mlrit.ac.in"
